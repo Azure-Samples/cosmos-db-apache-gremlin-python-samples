@@ -1,4 +1,4 @@
-# Azure Cosmos DB for NoSQL client library samples for Apache Gremlin
+# Azure Cosmos DB for Apache Gremlin client library samples for Apache Gremlin
 
 [![Validate Python projects](https://github.com/Azure-Samples/cosmos-db-apache-gremlin-python-samples/actions/workflows/validate.yml/badge.svg)](https://github.com/Azure-Samples/cosmos-db-apache-gremlin-python-samples/actions/workflows/validate.yml)
 
