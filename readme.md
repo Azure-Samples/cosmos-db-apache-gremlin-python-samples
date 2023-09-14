@@ -1,57 +1,40 @@
-# Project Name
-
-(short, 1-3 sentenced, description of the project)
-
-## Features
-
-This project framework provides the following features:
-
-* Feature 1
-* Feature 2
-* ...
-
-## Getting Started
-
-### Prerequisites
-
-(ideally very short, if any)
-
-- OS
-- Library version
-- ...
-
-### Installation
-
-(ideally very short)
-
-- npm install [package name]
-- mvn install
-- ...
-
-### Quickstart
-(Add steps to get up and running quickly)
-
-1. git clone [repository clone url]
-2. cd [repository name]
-3. ...
+# Azure Cosmos DB for NoSQL client library samples for Apache Gremlin
 
 
-## Demo
+## Getting started
 
-A demo app is included to show how to use the project.
+This repo has a [devcontainer](https://containers.dev) environment making it easy to get started.
 
-To run the demo, follow these steps:
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/Azure-Samples/cosmos-db-apache-gremlin-python-samples?quickstart=1)
 
-(Add steps to start up the demo)
+### Run the app
 
-1.
-2.
-3.
+Configure your Azure Cosmos DB credentials as environment variables.
 
-## Resources
+```bash
+export COSMOS_ENDPOINT="<cosmos-account-URI>"
+export COSMOS_KEY="<cosmos-account-PRIMARY-KEY>"
+```
 
-(Any additional resources or related projects)
+> **💡 TIP**: If you don't have an Azure Cosmos DB account, [create a free account](https://cosmos.azure.com/try/).
 
-- Link to supporting information
-- Link to similar sample
-- ...
+Run the quickstart sample app using the [`gremlinpython`](https://pypi.org/project/gremlinpython/) package from PyPI.
+
+```bash
+pip install gremlinpython
+python 001-quickstart/app.py
+```
+
+### Validate any changes you make
+
+If you change the code, run the linter and code formatter.
+
+```bash
+pip install flake8
+flake8 --verbose 001-quickstart/app.py
+```
+
+```bash
+pip install black
+black --verbose 001-quickstart/app.py
+```
