@@ -17,9 +17,6 @@ ACCOUNT_NAME = os.environ["COSMOS_GREMLIN_ENDPOINT"]
 ACCOUNT_KEY = os.environ["COSMOS_GREMLIN_KEY"]
 # </environment_variables>
 
-print(ACCOUNT_NAME)
-print(ACCOUNT_KEY)
-
 # <authenticate_connect_client>
 client = client.Client(
     url=f"wss://{ACCOUNT_NAME}.gremlin.cosmos.azure.com:443/",
